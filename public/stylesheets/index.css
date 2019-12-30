@@ -56,6 +56,7 @@ header{
   float: left;
   border-radius:3px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .left_box>.banbox>.banner{
   width:100%;
@@ -67,6 +68,99 @@ header{
 .left_box>.banbox>.banner>img{
   overflow: hidden;
   width:100%;
+  height:100%;
+}
+.left_box>.banbox>.banner>ul{
+  position: absolute;
+  left:40%;
+  bottom:10px;
+  list-style: none;
+}
+.left_box>.banbox>.banner>ul>li{
+  width:10px;
+  height:10px;
+  background:#fff;
+  border-radius:50%;
+  float: left;
+}
+.left_box>.banbox>.banner>ul>li:not(:first-child){
+  margin-left:15px;
+}
+.left_box>.banbox>.banner>a{
+}
+.left_box>.headline{
+  width:30%;
+  float: right;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.left_box>.headline>ul{
+  width:100%;
+  height:260px;
+  list-style: none;
+}
+.left_box>.headline>ul>li{
+  width:100%;
+  height:125px;
+  background: #000;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.left_box>.headline>ul>li a{
+  display: block;
+  position: relative;
+}
+.left_box>.headline>ul>li img{
+  width:100%;
+  height:100%;
+  transition: all 0.5s;
+  opacity: .7;
+}
+.left_box>.headline>ul>li:hover img{
+  opacity: 1;
+  transform: scale(1.1);
+}
+.left_box>.headline>ul>li span{
+  position:absolute;
+  color:#fff;
+  top:30%;
+  left:0;
+  font-size:15px;
+  padding:0 40px;
+  text-align: center;
+  line-height: 25px;
+  height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+}
+.left_box>.tab_box{
+  background:#fff;
+  border-radius:3px;
+  padding:20px;
+  margin-bottom:20px;
+  overflow: hidden;
+}
+.tab_box>.tab_buttons{
+  margin-bottom: 10px;
+  width:100%;
+  border-bottom:#e4e3e3 1px solid;
+}
+.tab_box>.tab_buttons>ul{
+  list-style: none;
+}
+.tab_box>.tab_buttons>ul li{
+  display: block;
+  float:left;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
 }
 
 #footer{
