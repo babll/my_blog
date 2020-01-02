@@ -150,6 +150,11 @@ header{
   width:100%;
   border-bottom:#e4e3e3 1px solid;
 }
+.tab_box>.tab_buttons::after{
+  content: "";
+  display: block;
+  clear: both;
+}
 .tab_box>.tab_buttons>ul{
   list-style: none;
 }
@@ -157,11 +162,81 @@ header{
   display: block;
   float:left;
   line-height: 40px;
-  width: 100%;
+  width: 100px;
+  height:40px;
   text-align: center;
   position: relative;
   cursor: pointer;
 }
+.tab_box>.tab_buttons>ul li:first-child{
+  border-bottom:1.5px solid #000;
+}
+.tab_box .newtab{
+  width:100%;
+}
+.tab_box .newsitem{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tab_box .newspic{
+  width:40%;
+  height:218px;
+  overflow: hidden;
+  margin-right:20px;
+}
+.tab_box .newspic>ul{
+  width:100%;
+  overflow: hidden;
+  list-style: none;
+}
+.tab_box .newspic>ul>li{
+  height:100px;
+  width:100%;
+  background: rgba(0,0,0,1);
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.tab_box .newspic>ul>li>a{
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.tab_box .newspic>ul>li>a>img{
+  height:100%;
+  width:100%;
+  transition: all 0.5s;
+  opacity: .7;
+}
+.tab_box .newspic>ul>li:hover img{
+  opacity: 1;
+  transform: scale(1.1);
+}
+.tab_box .newspic>ul>li span{
+  position: absolute;
+  bottom:50%;
+  color:#fff;
+  text-align: center;
+  font-size:15px;
+  padding:0 40px;
+  line-height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+}
+.tab_box .newslist{
+  width:100%;
+}
+.tab_box .newslist>ul{
+  list-style:none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 #footer{
   width:100%;
