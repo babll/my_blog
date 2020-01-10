@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="stylesheets/comm.css">
   <link rel="stylesheet" href="stylesheets/index.css">
+  
 </head>
 <body>
   <header ></header>
@@ -52,15 +53,16 @@
         <div class="tab_box">
           <div class="tab_buttons">
             <ul>
-              <li>个人博客</li>
-              <li>CSS3|HTML5</li>
-              <li>网站建设</li>
-              <li>推荐工具</li>
-              <li>设计心得</li>
+              <li data-click data-conent="newsitem1">个人博客</li>
+              <li data-click data-conent="newsitem2">CSS3|HTML5</li>
+              <li data-click data-conent="newsitem3">网站建设</li>
+              <li data-click data-conent="newsitem4">推荐工具</li>
+              <li data-click data-conent="newsitem5">设计心得</li>
             </ul>
           </div>
           <div class="newstab">
-            <div class="newsitem">
+            <div class="c1">
+              <div class="newsitem1">
               <div class="newspic">
                 <ul>
                   <li>
@@ -71,32 +73,80 @@
                   </li>
                 </ul>
               </div>
-              <div class="newslist">
+              <div id="newslist">
                 <ul>
-                  <li>
+                  <li data-accordion="one" class="open">
                     <i></i>
-                    <a href="">安静地做一个爱设计的女子</a>
+                    <a href="javascript:;" >安静地做一个爱设计的人</a>
                     <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现，因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客模板更为实在。每当看到自己喜欢的配色图片</p>
                   </li>
-                  <li>
+                  <li data-accordion="one">
                     <i></i>
-                    <a href="">电话以外的宁静</a>
+                    <a href="javascript:;">电话以外的宁静</a>
+                    <p>电话很久没有响过了，我的QQ也很久没有在线了，消失了很多天，刚刚结识的朋友因为我身上又起了红疹，每天都发来消息询问我的情况，我做到了这么多天来的沉默，我相信，没有网络，我还是可以继续我自己的生活</p>
                   </li>
-                  <li>
+                  <li data-accordion="one">
                     <i></i>
-                    <a href="">遇见一个未知的你</a>
+                    <a href="javascript:;">遇见一个未知的你</a>
+                    <p>听着那熟悉的歌曲看着那一张张可爱的图片.-读着我们共同欣赏的诗……也许我们曾经相遇,看着你远去的背影 ,沿着你来的方向 ,回忆时间穿梭于幸福的点点滴滴....</p>
                   </li>
-                  <li>
+                  <li data-accordion="one">
                     <i></i>
-                    <a href="">个人网站做好了，百度不收录怎么办？来，看看他们怎么做的...</a>
+                    <a href="javascript:;">个人网站做好了，百度不收录怎么办？来，看看他们怎么做的...</a>
+                    <p>不管你是学前端的还是后端的，作为一个程序员，做一个自己的博客，那是必然的。咱们的圈子就这么大，想让更多的人了解你，看看你的技术多牛逼，扔一个博客地址就行了</p>
                   </li>
-                  <li>
+                  <li data-accordion="one">
                     <i></i>
-                    <a href="">个人博客，属于我的小世界！</a>
+                    <a href="javascript:;">个人博客，属于我的小世界！</a>
+                    <p>个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。</p>
                   </li>
                 </ul>
               </div>
-            </div>    
+              </div> 
+            </div>
+            <div class="c2">
+              <div class="newsitem2">
+              <div class="newspic">
+                <ul>
+                  <li>
+                    <a href=""><img src="images/2-1.jpg" alt=""><span></span><span>个人网站做好了，百度不收录怎么办？来，看看他们怎么做的。</span></a>
+                  </li>
+                  <li>
+                    <a href=""><img src="images/2-2.jpg" alt=""><span></span><span>个人博客，属于我的小世界！</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div id="newslist">
+                <ul>
+                  <li data-accordion="one" class="open">
+                    <i></i>
+                    <a href="javascript:;" >安静地做一个爱设计的人</a>
+                    <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现，因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客模板更为实在。每当看到自己喜欢的配色图片</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">电话以外的宁静</a>
+                    <p>电话很久没有响过了，我的QQ也很久没有在线了，消失了很多天，刚刚结识的朋友因为我身上又起了红疹，每天都发来消息询问我的情况，我做到了这么多天来的沉默，我相信，没有网络，我还是可以继续我自己的生活</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">遇见一个未知的你</a>
+                    <p>听着那熟悉的歌曲看着那一张张可爱的图片.-读着我们共同欣赏的诗……也许我们曾经相遇,看着你远去的背影 ,沿着你来的方向 ,回忆时间穿梭于幸福的点点滴滴....</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">个人网站做好了，百度不收录怎么办？来，看看他们怎么做的...</a>
+                    <p>不管你是学前端的还是后端的，作为一个程序员，做一个自己的博客，那是必然的。咱们的圈子就这么大，想让更多的人了解你，看看你的技术多牛逼，扔一个博客地址就行了</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">个人博客，属于我的小世界！</a>
+                    <p>个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。</p>
+                  </li>
+                </ul>
+              </div>
+              </div> 
+            </div>
           </div>
         </div>
 
@@ -117,5 +167,6 @@
         </div>
       </div>
     </div>
+    <script src="javascripts/index.js"></script>
 </body>
 </html>
