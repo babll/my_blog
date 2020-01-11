@@ -1,17 +1,23 @@
-var newslist=document.getElementById("newslist");
-var lis=newslist.querySelectorAll("ul>li")
-console.log(lis);
-for(var li of lis){
-  li.onclick=function(){
-    //this.style.backgroundColor="red"
-    if(this.className=="open"){
+var tabs=document.querySelectorAll("div.tab_buttons>ul>li");
+//console.log(tabs);
+var Zindex=10;
+for(var tab of tabs){
+  tab.onclick=function(){
+    if(this.className=="underline"){
       this.className="";
     }else{
-      var liOpen=newslist.querySelector("ul>li.open");
-      if(liOpen!=null){
-        liOpen.className="";
-      };
-      this.className="open";
+      var tabOpen=document.querySelector("div.tab_buttons>ul>li.underline");
+      if(tabOpen!=null){
+        tabOpen.className="";
+      }
+      this.className="underline";
     }
-  } 
-}
+    var id=this.getAttribute("data-conent");
+    //console.log(id)
+    var div=document.getElementById(id);
+    //console.log(div);
+    Zindex++;
+    div.style.zIndex=Zindex;
+  }
+};
+

@@ -4,22 +4,35 @@
     <title></title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="../css/comm.css"/>
-    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="stylesheets/comm.css"/>
+    <link rel="stylesheet" href="stylesheets/header.css"/>
 </head>
 <body>
     <header ></header>
     <div class="nav_box">
-        <p class="logo"><a href="#">我的个人博客</a></p>
-        <ul class="nav">
-            <li><a href="#">网站首页</a></li>
-            <li><a href="#">心情随笔</a></li>
-            <li><a href="#">技术分享</a></li>
-            <li><a href="#">HTML5|CSS3</a></li>
-            <li><a href="#">相册</a></li>
-            <li><a href="#">留言</a></li>
-            <li><a href="#">关于我</a></li>
-        </ul>
+        <div class="content">
+            <p class="logo"><a href="#">我的个人博客</a></p>
+            <ul class="nav">
+                <li><a href="#">网站首页</a></li>
+                <li><a href="#">心情随笔</a></li>
+                <li><a href="#">技术分享</a></li>
+                <li><a href="#">HTML5|CSS3</a></li>
+                <li><a href="#">相册</a></li>
+                <li><a href="#">留言</a></li>
+                <li><a href="#">关于我</a></li>
+            </ul>
+            <div class="search">
+                <img src="images/bg.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <div id="search_bar">
+        <div class="content">
+            <input type="text" placeholder="请输入搜索的内容">
+            <button>搜索</button>
+        </div>
+        <img id="close" src="images/close.png" alt="">
     </div>
 </body>
 </html>

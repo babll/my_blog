@@ -12,16 +12,28 @@
 <body>
   <header ></header>
     <div class="nav_box">
-        <p class="logo"><a href="#">我的个人博客</a></p>
-        <ul class="nav">
-            <li><a href="#">网站首页</a></li>
-            <li><a href="#">心情随笔</a></li>
-            <li><a href="#">技术分享</a></li>
-            <li><a href="#">HTML5|CSS3</a></li>
-            <li><a href="#">相册</a></li>
-            <li><a href="#">留言</a></li>
-            <li><a href="#">关于我</a></li>
-        </ul>
+        <div class="content">
+            <p class="logo"><a href="#">我的个人博客</a></p>
+            <ul class="nav">
+                <li><a href="#">网站首页</a></li>
+                <li><a href="#">心情随笔</a></li>
+                <li><a href="#">技术分享</a></li>
+                <li><a href="#">HTML5|CSS3</a></li>
+                <li><a href="#">相册</a></li>
+                <li><a href="#">留言</a></li>
+                <li><a href="#">关于我</a></li>
+            </ul>
+            <div class="search">
+                <img src="images/bg.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="search_bar">
+        <div class="content">
+            <input type="text" placeholder="请输入搜索的内容">
+            <button>搜索</button>
+        </div>
+        <img id="close" src="images/close.png" alt="">
     </div>
 
     <div id="main">
@@ -53,15 +65,188 @@
         <div class="tab_box">
           <div class="tab_buttons">
             <ul>
-              <li data-click data-conent="newsitem1">个人博客</li>
-              <li data-click data-conent="newsitem2">CSS3|HTML5</li>
-              <li data-click data-conent="newsitem3">网站建设</li>
-              <li data-click data-conent="newsitem4">推荐工具</li>
-              <li data-click data-conent="newsitem5">设计心得</li>
+              <li data-click class="underline" data-conent="c1">个人博客</li>
+              <li data-click data-conent="c2">CSS3|HTML5</li>
+              <li data-click data-conent="c3">网站建设</li>
+              <li data-click data-conent="c4">推荐工具</li>
+              <li data-click data-conent="c5">设计心得</li>
             </ul>
           </div>
           <div class="newstab">
-            <div class="c1">
+            
+            <div id="c2">
+              <div class="newsitem2">
+              <div class="newspic">
+                <ul>
+                  <li>
+                    <a href="javascript:;"><img src="images/2-1.jpg" alt=""><span>十条设计原则教你学会如何设计网页布局!</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><img src="images/2-2.jpg" alt=""><span>别让这些闹心的套路，毁了你的网页设计</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div id="newslist">
+                <ul>
+                  <li data-accordion="one" class="open">
+                    <i></i>
+                    <a href="javascript:;" >【分享】css3侧边栏导航不同方向划出效果</a>
+                    <p>设定一组侧边栏导航菜单，然后可以从任何一边滑出。有两种实现方式，一种固定菜单，一种从左右两侧推出</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">使用CSS3制作文字、图片倒影</a>
+                    <p>CSS3制作文字、图片倒影需要涉及到使用CSS3.0新属性之box-reflect。box-reflect属性目前仅在Chrome、Safari和Opera浏览器下支持，但这并不影响我们来学习这个属性的应用</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">三步实现滚动条触动css动画效果</a>
+                    <p>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">十条设计原则教你学会如何设计网页布局!</a>
+                    <p>网页常见的布局有很多种,单列布局,多列布局.其中单列布局是国外很多网站比较常用的.咱们很多站长以及门户网站都使用的是是两列布局,很少用三列布局的.下面我来分享下我们常用的网页布局格式以及设计技巧</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">别让这些闹心的套路，毁了你的网页设计</a>
+                    <p>网页设计和做人一样，需要少一些套路，多一些真诚。那么下面就为大家揭穿那些看似好用，但用户体验并不好的设计模式。另外再附上解决办法，避免网页设计中出现这些问题</p>
+                  </li>
+                </ul>
+              </div>
+              </div> 
+            </div>
+            <div id="c3">
+              <div class="newsitem3">
+              <div class="newspic">
+                <ul>
+                  <li>
+                    <a href="javascript:;"><img src="images/3-1.png" alt=""><span>如何快速建立自己的个人博客网站</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><img src="images/3-2.png" alt=""><span>我的个人博客之——阿里云空间选择</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div id="newslist">
+                <ul>
+                  <li data-accordion="one" class="open">
+                    <i></i>
+                    <a href="javascript:;" >【个人博客网站制作】自己不会个人博客网站制作，你会选择用什么博...</a>
+                    <p>这些开源的博客程序源码，都是经过很多次版本测试的，都有固定的使用人群。我所知道的主流的博客程序有，Z-blog，Emlog，WordPress，Typecho等，免费的cms系统有，织梦cms（dedecms），phpcms，帝国cms（EmpireCMS）等。</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">如何快速建立自己的个人博客网站</a>
+                    <p>各大博客门户网站，相继关闭，做一个独立的个人博客网站，那是将来的趋势。越来越多的个人站长倾向于独立建站，有个属于自己的博客网站，那如何快速建立自己的个人博客网站呢，接下来，我</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">个人博客用帝国cms 自定义页面 灵动标签调用网站所有信息...</a>
+                    <p>例如时间轴这个栏目，要把所有的信息都统计下来，有两种方法，一种是写一个自定义的js，然后调用js，但是这样操作，后台更新会更不上。于是可以用下面这个方法，直接在自定义页面，使用灵动标签调用</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">我的个人博客之——阿里云空间选择</a>
+                    <p>之前服务器放在电信机房， 联通用户访问速度很不稳定，经常出现访问速度慢的问题，换到阿里云解决了之前的问题。很多人都问我的博客选得什么空间，一年的费用得多少钱，今天我列个表出来，供大家参考</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">建站流程篇——教你如何快速学会做网站</a>
+                    <p>如果你没有任何的建站基础，你想做一个网站，那么认真按照下面步骤操作，一小时内你就可以做出一个网站来。现在建一个网站对于新手来说，其实也是非常简单而且低成本的事情了。因为现在有大量开源免费的网站程序可以免费下载使用，就空间和域名一点钱，空间和域名加起来一年大概在200到400左右就可以做一个个人网站。</p>
+                  </li>
+                </ul>
+              </div>
+              </div> 
+            </div>
+            <div id="c4">
+              <div class="newsitem4">
+              <div class="newspic">
+                <ul>
+                  <li>
+                    <a href="javascript:;"><img src="images/4-1.png" alt=""><span></span><span>Color Scheme Designer 取色</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><img src="images/4-2.png" alt=""><span></span><span>CSS3 Maker 在线生成代码</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div id="newslist">
+                <ul>
+                  <li class="open">
+                    <i></i>
+                    <a href="javascript:;" >Color Scheme Designer 取色</a>
+                    <p>如果你还在为获取web颜色而烦恼的话，建议你使用Color Scheme Designer取色工具，以不同的模式，可以让你一下获取相近的四个颜色。</p>
+                  </li>
+                  <li>
+                    <i></i>
+                    <a href="javascript:;">按钮在线生成工具Button Maker</a>
+                    <p>Button Maker是CSS-TRICKS提供的一款在线生成Buttons的工具，可以根据工具上的参数，定制适合自己需要的Button</p>
+                  </li>
+                  <li>
+                    <i></i>
+                    <a href="javascript:;">CSS3 Maker 在线生成代码</a>
+                    <p>CSS3 Maker提供了10个最为常用的CSS3属性在线生成工具，比如说border-radius、gradient、transfrom、animation、transition、rgba、text-shadow、box-shadow、text rotation和@font-face。</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">Ui Parade免费的UI在线设计工具</a>
+                    <p>Ui Parade工具是一组免费的在线设计的应用程序，用很少的编码知识就能让您可以轻松地创建自定义的UI元素（按钮、表单、图标、丝带），你也可以下载你的作品在您的网站和在线应用程序使用。</p>
+                  </li>
+                  <li>
+                    <i></i>
+                    <a href="javascript:;">分享一个在线用css3生成气泡的工具CSS ARROW PLEASE!...</a>
+                    <p>CSS ARROW PLEASE 是一个在线生成气泡的工具，你可以在线制作一个你需要的气泡，可以调整宽度大小、箭头方向，边框属性等</p>
+                  </li>
+                </ul>
+              </div>
+              </div> 
+            </div>
+            <div id="c5">
+              <div class="newsitem5">
+              <div class="newspic">
+                <ul>
+                  <li>
+                    <a href="javascript:;"><img src="images/5-1.jpg" alt=""><span></span><span>作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</span></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"><img src="images/5-2.jpg" alt=""><span></span><span>网易博客关闭，何不从此开始潇洒行走江湖！</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div id="newslist">
+                <ul>
+                  <li class="open">
+                    <i></i>
+                    <a href="javascript:;" >即便是坑，我也想要拉你入伙！</a>
+                    <p>对于刚毕业的学生来说，想学习建网站，掌握一技之长，最简单的入门无非就是学会html和css，先前发表过一篇文章《如果要学习web前端开发，需要学习什么？》，如果你还不知道如何着手，请仔细阅读....7天的时间，入门是没有问题的，当然，如果你用心的话！</p>
+                  </li>
+                  <li>
+                    <i></i>
+                    <a href="javascript:;">我是怎么评价自己的？</a>
+                    <p>为了挨打轻一些，问我哪里来的，我瞎说了一个说那个谁家的，结果，打得更凶。最后事情还原了真相，我妈说，你要说说奶奶家的，都不会打你了。从此以后，我知道撒谎是会付出更惨痛的代价的，我不再撒谎，也不喜欢爱撒谎的人。</p>
+                  </li>
+                  <li>
+                    <i></i>
+                    <a href="javascript:;">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?...</a>
+                    <p>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。我也害怕收到大家不好的评论，有些评论，可能说者无意，但是对于每一个用心的站长来说，都会受很深</p>
+                  </li>
+                  <li>
+                    <i></i>
+                    <a href="javascript:;">遇见一个未知的你</a>
+                    <p>听着那熟悉的歌曲看着那一张张可爱的图片.-读着我们共同欣赏的诗……也许我们曾经相遇,看着你远去的背影 ,沿着你来的方向 ,回忆时间穿梭于幸福的点点滴滴....</p>
+                  </li>
+                  <li data-accordion="one">
+                    <i></i>
+                    <a href="javascript:;">网易博客关闭，何不从此开始潇洒行走江湖！</a>
+                    <p>从网易博客平台的出现，到现在已经有12个年头了，很多人还坚持着，网易博客一宣布关闭，很多人都很惋惜，那么多的文字记忆，又该如何是好？虽然可以一键搬迁到lofter</p>
+                  </li>
+                </ul>
+              </div>
+              </div> 
+            </div>
+            <div id="c1">
               <div class="newsitem1">
               <div class="newspic">
                 <ul>
@@ -104,55 +289,212 @@
               </div>
               </div> 
             </div>
-            <div class="c2">
-              <div class="newsitem2">
-              <div class="newspic">
-                <ul>
-                  <li>
-                    <a href=""><img src="images/2-1.jpg" alt=""><span></span><span>个人网站做好了，百度不收录怎么办？来，看看他们怎么做的。</span></a>
-                  </li>
-                  <li>
-                    <a href=""><img src="images/2-2.jpg" alt=""><span></span><span>个人博客，属于我的小世界！</span></a>
-                  </li>
-                </ul>
-              </div>
-              <div id="newslist">
-                <ul>
-                  <li data-accordion="one" class="open">
-                    <i></i>
-                    <a href="javascript:;" >安静地做一个爱设计的人</a>
-                    <p>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现，因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客模板更为实在。每当看到自己喜欢的配色图片</p>
-                  </li>
-                  <li data-accordion="one">
-                    <i></i>
-                    <a href="javascript:;">电话以外的宁静</a>
-                    <p>电话很久没有响过了，我的QQ也很久没有在线了，消失了很多天，刚刚结识的朋友因为我身上又起了红疹，每天都发来消息询问我的情况，我做到了这么多天来的沉默，我相信，没有网络，我还是可以继续我自己的生活</p>
-                  </li>
-                  <li data-accordion="one">
-                    <i></i>
-                    <a href="javascript:;">遇见一个未知的你</a>
-                    <p>听着那熟悉的歌曲看着那一张张可爱的图片.-读着我们共同欣赏的诗……也许我们曾经相遇,看着你远去的背影 ,沿着你来的方向 ,回忆时间穿梭于幸福的点点滴滴....</p>
-                  </li>
-                  <li data-accordion="one">
-                    <i></i>
-                    <a href="javascript:;">个人网站做好了，百度不收录怎么办？来，看看他们怎么做的...</a>
-                    <p>不管你是学前端的还是后端的，作为一个程序员，做一个自己的博客，那是必然的。咱们的圈子就这么大，想让更多的人了解你，看看你的技术多牛逼，扔一个博客地址就行了</p>
-                  </li>
-                  <li data-accordion="one">
-                    <i></i>
-                    <a href="javascript:;">个人博客，属于我的小世界！</a>
-                    <p>个人博客，用来做什么？我刚开始就把它当做一个我吐槽心情的地方，也就相当于一个网络记事本，写上一些关于自己生活工作中的小情小事，也会放上一些照片，音乐。每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。</p>
-                  </li>
-                </ul>
-              </div>
-              </div> 
-            </div>
           </div>
+        </div>
+
+        <div class="tebietj">
+          <div class="titel">
+            <h2>特别推荐</h2>
+          </div>
+          <ul>
+            <li>
+              <i>
+                <img src="images/b02.jpg" alt="">
+              </i>
+              <p>安静地做一个爱设计的人</p>
+              <span>自从入了这行，很多人跟我说可以做网络教程，我也有考虑，但最终没有实现，因为我觉得在这个教程泛滥的时代，直接做一套免费的原创个人博客模板更为实在。每当看到自己喜欢的配色图片</span>
+              <a href="javascript:;">+文章阅读</a>
+            </li>
+            <li>
+              <i>
+                <img src="images/h1.jpg" alt="">
+              </i>
+              <p>为什么说10月24日是程序员的节日？</p>
+              <span>创立“程序员节”最早是来自俄文《计算机世界》（《Компьютерра》）出版社的主编德米特里·门德列留科（Дмитрий Мендрелюк）在1996年7月15日的想法，当时计划将节日命名为“计算机用户节”，定在每年9月份的第一个星期五，称之为“纯净的星期五</span>
+              <a href="javascript:;">+文章阅读</a>
+            </li>
+            <li>
+              <i>
+                <img src="images/h2.jpg" alt="">
+              </i>
+              <p>个人网站做好了，百度不收录怎么办？来，看看他们怎么做的。</p>
+              <span>不管你是学前端的还是后端的，作为一个程序员，做一个自己的博客，那是必然的。咱们的圈子就这么大，想让更多的人了解你，看看你的技术多牛逼，扔一个博客地址就行了。
+                </span>
+              <a href="javascript:;">+文章阅读</a>
+            </li>
+            <li>
+              <i>
+                <img src="images/7.jpg" alt="">
+              </i>
+              <p>即便是坑，我也想要拉你入伙！</p>
+              <span>对于刚毕业的学生来说，想学习建网站，掌握一技之长，最简单的入门无非就是学会html和css，先前发表过一篇文章《如果要学习web前端开发，需要学习什么？》，如果你还不知道如何着手，请仔细阅读....7天的时间，入门是没有问题的，当然，如果你用心的话！
+                </span>
+              <a href="javascript:;">+文章阅读</a>
+            </li>
+            <li>
+              <i>
+                <img src="images/8.jpg" alt="">
+              </i>
+              <p>我是怎么评价自己的？</p>
+              <span>为了挨打轻一些，问我哪里来的，我瞎说了一个说那个谁家的，结果，打得更凶。最后事情还原了真相，我妈说，你要说说奶奶家的，都不会打你了。从此以后，我知道撒谎是会付出更惨痛的代价的，我不再撒谎，也不喜欢爱撒谎的人。
+                </span>
+              <a href="javascript:;">+文章阅读</a>
+            </li>
+            <li>
+              <i>
+                <img src="images/9.jpg" alt="">
+              </i>
+              <p>电话以外的宁静</p>
+              <span>电话很久没有响过了，我的QQ也很久没有在线了，消失了很多天，刚刚结识的朋友因为我身上又起了红疹，每天都发来消息询问我的情况，我做到了这么多天来的沉默，我相信，没有网络，我还是可以继续我自己的生活
+                </span>
+              <a href="javascript:;">+文章阅读</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="newest">
+          <div class="ntitle">
+            <h3>最新博文</h3>
+          </div>
+          <ul>
+            <li>
+              <h3>
+                <b>【顶】</b>
+                <a href="javascript:;">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a>
+              </h3>
+              <div class="content">
+                <div class="left">
+                  <i><a href="">技术分享</a></i>
+                  <a href=""><img src="images/5-1.jpg" alt=""></a>
+                </div>
+                <div class="right">
+                  <span>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。我也害怕收到大家不好的评论，有些评论，可能说者无意，但是对于每一个用心的站长来说，都会受很深 </span>
+                  <div class="info">
+                    <i>
+                      <a href=""><img src="images/01.jpg" alt=""></a>
+                      <img src="images/v.png" alt="">
+                    </i>
+                    <span>2019-12-22</span>
+                    <b>【 <a href="">技术分享</a> 】</b>
+                    <a href="">阅读更多</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h3>
+                <b>【顶】</b>
+                <a href="javascript:;">十条设计原则教你学会如何设计网页布局!</a>
+              </h3>
+              <div class="content">
+                <div class="left">
+                  <i><a href="">HTML5|CSS3</a></i>
+                  <a href=""><img src="images/2-1.jpg" alt=""></a>
+                </div>
+                <div class="right">
+                  <span>网页常见的布局有很多种,单列布局,多列布局.其中单列布局是国外很多网站比较常用的.咱们很多站长以及门户网站都使用的是是两列布局,很少用三列布局的.下面我来分享下我们常用的网页布局格式以及设计技巧 </span>
+                  <div class="info">
+                    <i>
+                      <a href=""><img src="images/01.jpg" alt=""></a>
+                      <img src="images/v.png" alt="">
+                    </i>
+                    <span>2019-12-12</span>
+                    <b>【 <a href="">HTML5|CSS3</a> 】</b>
+                    <a href="">阅读更多</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h3>
+                <b>【顶】</b>
+                <a href="javascript:;">人生数10载，你已度过几个10年？  </a>
+              </h3>
+              <div class="content">
+                <div class="left">
+                  <i><a href="">心情随笔</a></i>
+                  <a href=""><img src="images/10.jpg" alt=""></a>
+                </div>
+                <div class="right">
+                  <span> 人生数10载，你已度过几个10年？
+                      人生一共就是由几个10年组成的，每个10年都有不同的经历，不同的心境，每个10年追求的东西都不一样。
+                      鱼与熊掌不可兼得，在追求的过程中你总要有取舍，该取什么?该舍什么?
+                      10岁时
+                      应该不再计较家里给的零花钱多少，不和别人家的孩子比较穿名牌服装；...</span>
+                  <div class="info">
+                    <i>
+                      <a href=""><img src="images/01.jpg" alt=""></a>
+                      <img src="images/v.png" alt="">
+                    </i>
+                    <span>2019-12-01</span>
+                    <b>【 <a href="">心情随笔</a> 】</b>
+                    <a href="">阅读更多</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h3>
+                <b></b>
+                <a href="javascript:;"> 不可思议的纯 CSS 实现鼠标跟随效果 </a>
+              </h3>
+              <div class="content">
+                <div class="left">
+                  <i><a href="">HTML5|CSS3</a></i>
+                  <a href=""><img src="images/11.jpg" alt=""></a>
+                </div>
+                <div class="right">
+                  <span>通常而言，CSS 负责表现，JavaScript 负责行为。而鼠标跟随这种效果属于行为，要实现通常都需要借助 JS。当然，本文的重点，就是介绍如何在不借助 JS 的情况下使用 CSS 来模拟实现一些鼠标跟随的行为动画效果。</span>
+                  <div class="info">
+                    <i>
+                      <a href=""><img src="images/01.jpg" alt=""></a>
+                      <img src="images/v.png" alt="">
+                    </i>
+                    <span>2019-11-13</span>
+                    <b>【 <a href="">HTML5|CSS3</a> 】</b>
+                    <a href="">阅读更多</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h3>
+                <b></b>
+                <a href="javascript:;">  2019年 值得收藏的 15 个 JavaScript 和 CSS 动画库 </a>
+              </h3>
+              <div class="content">
+                <div class="left">
+                  <i><a href="">技术分享</a></i>
+                  <a href="javascript:;"><img src="images/1.png" alt=""></a>
+                </div>
+                <div class="right">
+                  <span>当我浏览网页寻找一个整洁的 Javascript 动画库时，我发现很多 “推荐” 的动画库都有一段时间没维护了。经过一些研究，我收集了 15 个最好的 Javascript 动画库，你可以放心在你的应用程序中使用。在文章最后我还添加了一些有用的库，但是有一部分很久没维护了。</span>
+                  <div class="info">
+                    <i>
+                      <a href=""><img src="images/01.jpg" alt=""></a>
+                      <img src="images/v.png" alt="">
+                    </i>
+                    <span>2019-11-13</span>
+                    <b>【 <a href="">技术分享</a> 】</b>
+                    <a href="">阅读更多</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
 
       </div>
 
-      <div class="right_box"></div>
+      <div class="right_box">
+        <div class="card">
+          <h2>我的名片</h2>
+          <p>网名：</p>
+          <p>职业：</p>
+          <p>现居：</p>
+          <p>Email：</p>
+        </div>
+      </div>
     </div>
 
     <div id="footer">
@@ -168,5 +510,6 @@
       </div>
     </div>
     <script src="javascripts/index.js"></script>
+    <script src="javascripts/header.js"></script>
 </body>
 </html>
