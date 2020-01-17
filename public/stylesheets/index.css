@@ -317,13 +317,6 @@ header{
 #newslist ul li:first-child i::before {
   content: "1";
 }
-#newslist ul li:first-child i{
-  background-color: #000;
-}
-#newslist ul li:first-child a{
-  color: #000;
-  font-weight: bold;
-}
 #newslist li:nth-child(2) i::before{
   content: "2";
 }
@@ -361,9 +354,6 @@ header{
 #newslist ul li>a{
   color: #333;
 }
-#newslist ul li.open p{
-  display: block;
-}
 #c2 .newspic>ul>li>a span{
   top:30%;
   height: 48px;
@@ -379,6 +369,19 @@ header{
   top:15%;
   height: 48px;
 }
+ #newslist li:first-child a { 
+  color: #000; 
+  font-weight: bold ;
+}
+#newslist li:first-child i { 
+  background: #222; 
+}/*
+table:hover #newslist li:first-child p{
+  display: block;
+}*/
+#newslist li.open p{
+  display: block;
+} 
 .tebietj{
   padding:20px;
   background:#fff;
