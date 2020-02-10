@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>留言</title>
+  <link rel="stylesheet" href="stylesheets/comm.css">
+  <link rel="stylesheet" href="stylesheets/message.css">
+  <script src="javascripts/jquery-1.11.3.js"></script>
+</head>
+<body>
+  <header ></header>
+    <div class="nav_box">
+        <div class="content">
+            <p class="logo"><a href="#">我的个人博客</a></p>
+            <ul class="nav">
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="causerie.html">心情随笔</a></li>
+                <li><a href="infinite.html">学无止境</a></li>
+                <li><a href="html5-css3.html">HTML5|CSS3</a></li>
+                <li><a href="study.html">书屋</a></li>
+                <li><a href="about_me.html">关于我</a></li>
+                <li><a href="message.html">留言</a></li>
+            </ul>
+            <div class="search">
+                <img src="images/bg.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="search_bar">
+      <div class="content">
+          <input type="text" placeholder="请输入搜索的内容">
+          <button>搜索</button>
+      </div>
+      <img id="close" src="images/close.png" alt="">
+    </div>
+
+    <div id="article">
+      <h2>
+        <span>留言</span>
+      </h2>
+      <div class="news_infos">
+        <div class="gbox">
+          <h3>来说点儿什么吧...</h3>
+          <p>
+            <span>您的姓名:</span>
+            <input type="text" id="name"> *
+          </p>
+          <p>
+            <span>选择头像:</span> * 
+          </p>
+          <p id="tx">
+            <i data-img="images/tx1.jpg">
+              <img src="images/tx1.jpg" alt="">
+            </i>
+            <i data-img="images/tx2.jpg">
+              <img src="images/tx2.jpg" alt="">
+            </i>
+            <i data-img="images/tx3.jpg">
+              <img src="images/tx3.jpg" alt="">
+            </i>
+            <i data-img="images/tx4.jpg">
+              <img src="images/tx4.jpg" alt="">
+            </i>
+            <i data-img="images/tx5.jpg">
+              <img src="images/tx5.jpg" alt="">
+            </i>
+            <i data-img="images/tx6.jpg">
+              <img src="images/tx6.jpg" alt="">
+            </i>
+            <i data-img="images/tx7.jpg">
+              <img src="images/tx7.jpg" alt="">
+            </i>
+          </p>
+          <p id="ly">
+            <span>留言内容:</span>
+            <textarea name="lytext" id="lytext" cols="60" rows="12"></textarea>
+          </p>
+          <p id="tj">
+            <button id="btn">提交</button>
+          </p>
+        </div>
+        <div class="liuyan">
+          <div class="fb">
+          <ul>
+            <li>
+              <img class="tximg" src="images/tx1.jpg" alt="">
+            </li>
+            <li>
+              <p class="top">
+                <span class="fbname">天涯海角</span>
+                <span class="fbtime">2020-02-01</span>
+              </p>
+              <p>
+                <span class="fbinfo">玲珑骰子安红豆，入骨相思知不知。</span>
+              </p>
+            </li>
+          </ul>
+          </div>
+          <div class="fb">
+            <ul>
+              <li>
+                <img class="tximg" src="images/tx1.jpg" alt="">
+              </li>
+              <li>
+                <p class="top">
+                  <span class="fbname">天涯海角</span>
+                  <span class="fbtime">2020-02-01</span>
+                </p>
+                <p>
+                  <span class="fbinfo">玲珑骰子安红豆，入骨相思知不知。</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="fb">
+            <ul>
+              <li>
+                <img class="tximg" src="images/tx1.jpg" alt="">
+              </li>
+              <li>
+                <p class="top">
+                  <span class="fbname">天涯海角</span>
+                  <span class="fbtime">2020-02-01</span>
+                </p>
+                <p>
+                  <span class="fbinfo">玲珑骰子安红豆，入骨相思知不知。</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="content">
+        <img src="images/5.jpg" alt="">
+        <img src="images/6.jpg" alt="">
+        <div class="text">
+          <h4>站点说明</h4>
+          <p>1、本站个人博客模板，均为本人设计，个人可以使用，但是未经许可不得用于任何商业目的。</p>
+          <p>2、所有文章未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。举报邮箱：2358432313@qq.com</p>
+          <p>Copyright © www.yaya.com All Rights Reserved. 备案号：蜀ICP备11002373号-1</p>
+        </div>
+      </div>
+    </div>
+    <script src="javascripts/header.js"></script>
+    <script>
+      $("#tx>i").click(function(){
+        // console.log($(this).attr("data-img"))
+        $(this).css("opacity","1").siblings().css("opacity","0.8");
+        var $src=$(this).attr("data-img");
+          $("#tj>#btn").click(function(){
+          // console.log($("#lytext").val())
+          //console.log($src);
+          if($("#name").val()==false){
+            alert("姓名不能为空！！！");
+            return;
+          }
+          if($("#lytext").val()==false){
+            alert("留言不能为空！！！");
+            return;
+          }
+          var $title=$("#name").val();
+          var $ly=$("#lytext").val();
+          function getNowFormatDate() {
+            var date = new Date();
+            var seperator1 = "-";
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var strDate = date.getDate();
+            if (month >= 1 && month <= 9) {
+                month = "0" + month;
+            }
+            if (strDate >= 0 && strDate <= 9) {
+                strDate = "0" + strDate;
+            }
+            var currentdate = year + seperator1 + month + seperator1 + strDate;
+            return currentdate;
+          }
+          var $html=$(`<div class="fb">
+            <ul>
+              <li>
+                <img class="tximg" src="${$src}" alt="">
+              </li>
+              <li>
+                <p class="top">
+                  <span class="fbname">${$title}</span>
+                  <span class="fbtime">${getNowFormatDate()}</span>
+                </p>
+                <p>
+                  <span class="fbinfo">${$ly}</span>
+                </p>
+              </li>
+            </ul>
+          </div>`);
+          $html.prependTo(".liuyan");
+          $("#name").val("");
+          $("#lytext").val("");
+        })
+      })
+      
+    </script>
+</body>
+</html>

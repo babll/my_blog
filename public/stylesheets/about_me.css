@@ -1,0 +1,177 @@
+header{
+  width:100%;
+  height:5px;
+  background:linear-gradient(to left,#4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+}
+.nav_box{
+  width:100%;
+  height:60px;
+  background:#1c2327;
+  
+}
+.nav_box>.content{
+  width:90%;
+  display: flex;
+  margin:0 auto;
+  justify-content:space-between;
+  align-items: center;
+}
+.nav_box .logo{
+  font-size:22px;
+  line-height: 60px;
+}
+.nav_box .logo>a , .nav_box ul li a{
+  display: inline-block;
+  color:#fff;
+}
+.content .nav{
+  margin-right: 140px;
+}
+.nav_box .nav li{
+  list-style: none;
+  float: left;
+  margin-left: 50px;
+}
+.nav_box .nav li:nth-child(6) a{
+  color:#00c1de;
+}
+.nav_box .nav li a:hover{
+  color:#00c1de;
+}
+.nav_box .logo{
+  margin-left: 60px;
+}
+#search_bar{
+  width:90%;
+  margin:10px auto;
+  background-color: #fff;
+  position: relative;
+  display: none;
+}
+#search_bar::before{
+  content: "";
+  display: table;
+}
+#search_bar>.content{
+  width:50%;
+  margin:20px auto;
+  
+}
+#search_bar>.content>input{
+  width:69%;
+  height: 36px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  outline-style: none;
+  border: 1px solid #b2b2b2;
+  padding-left: 20px;
+}
+#search_bar>.content>button{
+  width:30%;
+  height: 36px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline-style: none;
+  border: 1px solid #b2b2b2;
+  background: #1c2327;
+  color:#fff;
+}
+#close{
+  display: block;
+  position: absolute;
+  top:0px;
+  right:0px;
+}
+#about{
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 40px;
+  background-color: #fff;
+  background: url(../images/abbg.png) no-repeat right top #fff;
+}
+#about>.ab_box{
+  margin: 20px 0;
+}
+#about>.ab_box::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+#about>.ab_box>i{
+  display: block;
+  width:100px;
+  height:100px;
+  position: relative;
+  float: left;
+  border-radius: 50%;
+  border:2px solid #5ac8fa;
+  margin-right: 10px;
+}
+#about>.ab_box>i>a img{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+#about>.ab_box>i>img{
+  width:24px;
+  height: 24px;
+  position: absolute;
+  top:68px;
+  right:0px;
+}
+#about>.ab_box>h3{
+  font-size: 18px;
+  margin: 10px 0;
+}
+#about>.ab_box>p{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+#about>.gd_title {
+  margin: 20px 0;
+  font-size: 18px;
+  background: url(../images/hline.png) no-repeat bottom right;
+  width: 120px;
+  clear: both;
+  background-size: 40px;
+  border-bottom: #000 1px dashed;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#footer{
+  width:100%;
+  height:190px;
+  border-top:10px solid #00c1de;
+  padding:30px 0;
+  background:#373D41;
+}
+#footer>.content{
+  width:100%;
+  padding:0 20px;
+  display: flex;
+  align-items: center;
+}
+#footer>.content>img{
+  width:100px;
+  height:100px;
+  margin-top:15px;
+}
+#footer>.content>img:first-child{
+  padding:10px;
+  background:#fff;
+  margin-right:20px;
+}
+#footer>.content>.text{
+  color:#73777a;
+  margin-left:20px;
+}
+#footer>.content>.text>h4{
+  font-size: 16px;
+  color:#00c1de;
+}
+#footer>.content>.text>p{
+  line-height: 23px;
+  font-size: 14px;
+}
