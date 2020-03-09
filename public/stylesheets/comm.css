@@ -11,3 +11,16 @@ body{
 a{
     text-decoration: none;
 }
+.nav_box>.content>.search{
+    display: flex;
+    align-items: center;
+}
+.nav_box>.content>.search>span{
+    margin-right: 20px;
+}
+.nav_box>.content>.search>span>a{
+    color: #fff;
+}
+.nav_box>.content>.search>span>a:hover{
+    color:#00c1de;
+}

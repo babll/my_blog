@@ -421,7 +421,7 @@ header{
 table:hover #newslist li:first-child p{
   display: block;
 }*/
-#newslist li.open p{
+#newslist>ul>li:first-child p{
   display: block;
 } 
 .tebietj{

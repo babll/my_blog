@@ -11,10 +11,10 @@
   
 </head>
 <body>
-  <header ></header>
-    <div class="nav_box">
+  <div id="header">
+    <!-- <div class="nav_box">
         <div class="content">
-            <p class="logo"><a href="#">我的个人博客</a></p>
+            <p class="logo"><a href="#">我的个人网站</a></p>
             <ul class="nav">
                 <li><a href="index.html">网站首页</a></li>
                 <li><a href="causerie.html">心情随笔</a></li>
@@ -35,7 +35,9 @@
             <button>搜索</button>
         </div>
         <img id="close" src="images/close.png" alt="">
-    </div>
+    </div> -->
+  </div>
+    
 
     <div id="main">
       <div class="left_box">
@@ -63,12 +65,12 @@
         </div>
         <div class="headline">
           <ul>
-            <li>
-              <a href="javascript:;"><img src="images/h1.jpg" alt=""><span>为什么说10月24号是程序员的生日？</span></a>
+            <!-- <li>
+              <a href="details.html"><img src="images/h1.jpg" alt=""><span>为什么说10月24号是程序员的生日？</span></a>
             </li>
             <li>
               <a href="javascript:;"><img src="images/h2.jpg" alt=""><span>2019年 值得收藏的 15 个 JavaScript 和 CSS 动画库</span></a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="tab_box">
@@ -84,18 +86,18 @@
             <div id="c2">
               <div class="newsitem5">
               <div class="newspic">
-                <ul>
-                  <li>
-                    <a href="javascript:;"><img src="images/5-1.jpg" alt=""><span></span><span>作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</span></a>
+                <ul id="tag_left1">
+                  <!-- <li>
+                    <a href="javascript:;"><img src="images/5-1.jpg" alt=""><span>作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</span></a>
                   </li>
                   <li>
-                    <a href="javascript:;"><img src="images/5-2.jpg" alt=""><span></span><span>网易博客关闭，何不从此开始潇洒行走江湖！</span></a>
-                  </li>
+                    <a href="javascript:;"><img src="images/5-2.jpg" alt=""><span>网易博客关闭，何不从此开始潇洒行走江湖！</span></a>
+                  </li> -->
                 </ul>
               </div>
               <div id="newslist">
-                <ul>
-                  <li class="open">
+                <ul id="tag1">
+                  <!-- <li>
                     <i></i>
                     <a href="javascript:;" >即便是坑，我也想要拉你入伙！</a>
                     <p>对于刚毕业的学生来说，想学习建网站，掌握一技之长，最简单的入门无非就是学会html和css，先前发表过一篇文章《如果要学习web前端开发，需要学习什么？》，如果你还不知道如何着手，请仔细阅读....7天的时间，入门是没有问题的，当然，如果你用心的话！</p>
@@ -119,7 +121,7 @@
                     <i></i>
                     <a href="javascript:;">网易博客关闭，何不从此开始潇洒行走江湖！</a>
                     <p>从网易博客平台的出现，到现在已经有12个年头了，很多人还坚持着，网易博客一宣布关闭，很多人都很惋惜，那么多的文字记忆，又该如何是好？虽然可以一键搬迁到lofter</p>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               </div> 
@@ -127,42 +129,42 @@
             <div id="c3">
               <div class="newsitem3">
               <div class="newspic">
-                <ul>
-                  <li>
+                <ul id="tag_left2">
+                  <!-- <li>
                     <a href="javascript:;"><img src="images/5-1.jpg" alt=""><span>作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</span></a>
                   </li>
                   <li>
                     <a href="javascript:;"><img src="images/4.png" alt=""><span>JS 循环遍历方法的对比</span></a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               <div id="newslist">
-                <ul>
-                  <li data-accordion="one" class="open">
+                <ul id="tag2">
+                  <!-- <li>
                     <i></i>
                     <a href="javascript:;" >2019年 值得收藏的 15 个 JavaScript 和 CSS 动画库</a>
                     <p>当我浏览网页寻找一个整洁的 Javascript 动画库时，我发现很多 “推荐” 的动画库都有一段时间没维护了。经过一些研究，我收集了 15 个最好的 Javascript 动画库，你可以放心在你的应用程序中使用。在文章最后我还添加了一些有用的库，但是有一部分很久没维护了。</p>
                   </li>
-                  <li data-accordion="one">
+                  <li>
                     <i></i>
                     <a href="javascript:;">JavaScript数据结构和算法（二）队列</a>
                     <p>上一篇笔记学习了栈这一数据结构，与栈很相似的另一种数据结构叫做队列。与栈的LIFO（后进先出）原则不同的是，队列遵循的是FIFO（先进先出）原则。这篇笔记就来学习队列这一数据结构。 队列数据结构 FIFO原则的规则是，在尾部添加新元素，并从…</p>
                   </li>
-                  <li data-accordion="one">
+                  <li>
                     <i></i>
                     <a href="javascript:;">JavaScript数据结构和算法（一）栈</a>
                     <p>在平时的工作中，操作数据用的最多的可能就是数组了，有了数组，我们可以做很多事情，比如在数组的任意位置上删除或添加元素。但是有些时候，单纯的数组并不能满足我们的需求，这时候就需要新的数据结构。有这么两种类似于数组的数据结构在添加和删除元素时更…</p>
                   </li>
-                  <li data-accordion="one">
+                  <li>
                     <i></i>
                     <a href="javascript:;">JS中typeof与instanceof的区别</a>
                     <p>JavaScript 中 typeof 和 instanceof 常用来判断一个变量是否为空，或者是什么类型的。但它们之间还是有区别的： typeof typeof 是一个一元运算，放在一个运算数之前，运算数可以是任意类型。它返回值是一个字…</p>
                   </li>
-                  <li data-accordion="one">
+                  <li>
                     <i></i>
                     <a href="javascript:;">不可思议的纯 CSS 实现鼠标跟随效果</a>
                     <p>如果你没有任何的建站基础，你想做一个网站，那么认真按照下面步骤操作，一小时内你就可以做出一个网站来。现在建一个网站对于新手来说，其实也是非常简单而且低成本的事情了。因为现在有大量开源免费的网站程序可以免费下载使用，就空间和域名一点钱，空间和域名加起来一年大概在200到400左右就可以做一个个人网站。</p>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               </div> 
@@ -170,18 +172,18 @@
             <div id="c4">
               <div class="newsitem4">
               <div class="newspic">
-                <ul>
-                  <li>
+                <ul id="tag_left4">
+                  <!-- <li>
                     <a href="javascript:;"><img src="images/jianai.jpg" alt=""><span></span><span>夏洛蒂·勃朗特《简爱》</span></a>
                   </li>
                   <li>
                     <a href="javascript:;"><img src="images/bngd.jpg" alt=""><span></span><span>《百年孤独》 加夫列尔·加西亚·马尔克斯</span></a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               <div id="newslist">
-                <ul>
-                  <li class="open">
+                <ul id="tag4">
+                  <!-- <li>
                     <i></i>
                     <a href="javascript:;" >《活着》书评</a>
                     <p>这个很经典久负盛名的文学作品一直到现在才翻开它、阅读它。翻开第一页第二页我就止不住继续看下去的念头，一天几乎都泡在图书馆里品读它，时而笑时而哭时而皱眉时而紧张。</p>
@@ -196,7 +198,7 @@
                     <a href="javascript:;">《解忧杂货店》书评</a>
                     <p>一间荒废了很久的杂货店，一间神秘的杂货店，一间可以解忧的杂货店，因为三个小偷的闯入而变得不一样起来……</p>
                   </li>
-                  <li data-accordion="one">
+                  <li>
                     <i></i>
                     <a href="javascript:;">《三体》书评</a>
                     <p>说到中国现代的科幻小说，《三体》是一部不得不提到的作品。“里程碑式”“必将成为经典”“超绝奇想”„„究竟是怎样一部科幻小说能获得如此高的评价?</p>
@@ -205,7 +207,7 @@
                     <i></i>
                     <a href="javascript:;">《平凡的世界》书评</a>
                     <p>这是一个喧嚣浮躁、道德危机的时代，每一个还拥有梦想并在追梦的人们都该再重温《平凡的世界》，它会让你懂得：尽管命运是那样的不公，尽管社会有那么多的不公，可只要你能够不屈不挠、艰苦奋斗、勇往直前终能获得最后的成功。</p>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               </div> 
@@ -213,8 +215,8 @@
             <div id="c1">
               <div class="newsitem2">
               <div class="newspic">
-                <ul>
-                  <li>
+                <ul id="tag_left3">
+                  <!-- <li>
                     <a href="javascript:;">
                       <img src="images/2-1.jpg" alt="">
                       <span>十条设计原则教你学会如何设计网页布局!</span>
@@ -222,12 +224,12 @@
                   </li>
                   <li>
                     <a href="javascript:;"><img src="images/2-2.jpg" alt=""><span>别让这些闹心的套路，毁了你的网页设计</span></a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               <div id="newslist">
-                <ul>
-                  <li data-accordion="one" class="open">
+                <ul id="tag3">
+                  <!-- <li data-accordion="one">
                     <i></i>
                     <a href="javascript:;" >【分享】css3侧边栏导航不同方向划出效果</a>
                     <p>设定一组侧边栏导航菜单，然后可以从任何一边滑出。有两种实现方式，一种固定菜单，一种从左右两侧推出</p>
@@ -251,7 +253,7 @@
                     <i></i>
                     <a href="javascript:;">别让这些闹心的套路，毁了你的网页设计</a>
                     <p>网页设计和做人一样，需要少一些套路，多一些真诚。那么下面就为大家揭穿那些看似好用，但用户体验并不好的设计模式。另外再附上解决办法，避免网页设计中出现这些问题</p>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               </div> 
@@ -264,7 +266,7 @@
             <h2>特别推荐</h2>
           </div>
           <ul>
-            <li>
+            <!-- <li>
               <i>
                 <img src="images/b02.jpg" alt="">
               </i>
@@ -315,7 +317,7 @@
               <span>电话很久没有响过了，我的QQ也很久没有在线了，消失了很多天，刚刚结识的朋友因为我身上又起了红疹，每天都发来消息询问我的情况，我做到了这么多天来的沉默，我相信，没有网络，我还是可以继续我自己的生活
                 </span>
               <a href="javascript:;">+文章阅读</a>
-            </li>
+            </li> -->
           </ul>
         </div>
 
@@ -324,7 +326,7 @@
             <h3>最新博文</h3>
           </div>
           <ul>
-            <li>
+            <!-- <li>
               <h3>
                 <b>【顶】</b>
                 <a href="javascript:;">作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a>
@@ -447,7 +449,7 @@
                   </div>
                 </div>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
 
@@ -471,23 +473,23 @@
         <div class="recent_updates">
           <h2><span>最近更新</span></h2>
           <ul>
-            <li><a href="javascript:;"> 你所不知道的 CSS 阴影技巧与细节 </a></li>
+            <!-- <li><a href="javascript:;"> 你所不知道的 CSS 阴影技巧与细节 </a></li>
             <li><a href="javascript:;"> JavaScript Prototype(原型) 新手指南 </a></li>
             <li><a href="javascript:;"> 你所不知道的 CSS 阴影技巧与细节</a></li>
-            <li><a href="javascript:;">JavaScript Prototype(原型) 新手指南</a></li>
+            <li><a href="javascript:;">JavaScript Prototype(原型) 新手指南</a></li> -->
           </ul>
         </div>
 
         <div class="click_rank">
           <h2><span>点击排行</span></h2>
           <div class="img">
-            <a href="javascript:;">
+            <!-- <a href="javascript:;">
               <img src="images/5-1.jpg" alt="">
               <span>作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</span>
-            </a>
+            </a> -->
           </div>
           <ul>
-            <li>
+            <!-- <li>
               <a href="javascript:;">
                 <i></i>
               <span>人生数10载，你已度过几个10年？</span>
@@ -528,20 +530,20 @@
                 <i></i>
               <span>JS中typeof与instanceof的区别</span>
               </a>
-            </li>
+            </li> -->
           </ul>  
         </div>
 
         <div class="tuijian">
           <h2><span>站长推荐</span></h2>
           <div class="img">
-            <a href="javascript:;">
+            <!-- <a href="javascript:;">
               <img src="images/20.jpg" alt="">
               <span>不要让坏的习惯毁了整个项目</span>
-            </a>
+            </a> -->
           </div>
           <ul>
-            <li>
+            <!-- <li>
               <a href="javascript:;">
                 <img src="images/21.jpg" alt="">
                 <span>js判断图片是否加载完成并获取图片的原始尺寸</span>
@@ -576,14 +578,14 @@
                 <img src="images/book-3.jpg" alt="">
                 <span>《解忧杂货店》书评</span>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
     </div>
 
     <div id="footer">
-      <div class="content">
+      <!-- <div class="content">
         <img src="images/5.jpg" alt="">
         <img src="images/6.jpg" alt="">
         <div class="text">
@@ -592,10 +594,11 @@
           <p>2、所有文章未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。举报邮箱：2358432313@qq.com</p>
           <p>Copyright © www.yaya.com All Rights Reserved. 备案号：蜀ICP备11002373号-1</p>
         </div>
-      </div>
+      </div> -->
     </div>
     <script src="javascripts/index.js"></script>
     <script src="javascripts/header.js"></script>
+    <script src="javascripts/footer.js"></script>
     <script>
       var i=0;
       var LIWIDTH=700;
