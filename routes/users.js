@@ -17,6 +17,18 @@ router.get('/login',(req,res,next)=>{
 	}
   });
 });
+router.get('/detection',(req,res,next)=>{
+  var $uname=req.query.uname;
+  pool.query('SELECT*FROM wz_user WHERE uname=?',[$uname],(err,result)=>{
+    if(err) throw err;
+    // console.log(result)
+	if(result.length>0){
+    res.send("1");
+	}else{
+	  res.send('0');
+	}
+  });
+});
 
 router.post('/reg',(req,res)=>{
   var obj=req.body;

@@ -5,7 +5,7 @@ $(function(){
     dataType:"json",
     xhrFields:{withCredentials:true},
     success:function(result){
-      console.log(result);
+      // console.log(result);
       // 心情随笔tag栏
       var arr1 = result.slice(0,2);
       var html1 = "";

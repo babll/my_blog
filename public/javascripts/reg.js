@@ -16,7 +16,22 @@ $(function(){
       $("#uname-msg").html($(`<p style="color:red;">账户格式不正确</p>`));
       return;
     }else{
-      $("#uname-msg").html($(`<p style="color:green;">账户格式正确</p>`));
+      var uname = $("#uname").val();
+      $.ajax({
+        url:"http://localhost:3000/users/detection",
+          data:{uname:uname},
+          type:"get",
+          // dataType:"",
+          success:function(result){
+            // console.log(result);
+            if(result==1){
+              $("#uname-msg").html($(`<p style="color:red;">该账户已存在！</p>`));
+              return;
+            }else{
+              $("#uname-msg").html($(`<p style="color:green;">账户格式正确</p>`));
+            }
+          } 
+      })
     }
   })
   $("#upwd").blur(function(){
@@ -31,7 +46,7 @@ $(function(){
       $("#btn").click(function(){
         var uname = $("#uname").val();
         var upwd = $("#upwd").val();
-        console.log(uname,upwd)
+        // console.log(uname,upwd)
         $.ajax({
           url:"http://localhost:3000/users/reg",
           data:{uname:uname,upwd:upwd},
@@ -44,7 +59,7 @@ $(function(){
               window.location.href="login.html"
             }else{
               alert("注册失败");
-            }
+            } 
           }
         })
       })
